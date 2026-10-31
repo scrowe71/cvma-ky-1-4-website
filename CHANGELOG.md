@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.3.0 – 2026-10-31
+- Officers page lists the chapter officers with names and email links: Commander, Executive Officer, Treasurer, Secretary, Sergeant at Arms, Public Relations Officer, Chaplain, Quartermaster, Road Captains, Webmaster (TBD)
+- Removed the "placeholder roles" notice
+- "Photo coming soon" placeholder picture for each officer (not Road Captains); real photos can replace it one at a time
+
 ## v1.2.1 – 2026-10-31
 - Added ZIP code 47150 to the Liberty Place address (Annual Chapter Picnic)
 

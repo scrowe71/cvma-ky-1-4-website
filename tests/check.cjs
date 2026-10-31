@@ -57,3 +57,11 @@ console.log('PASS: photo viewer has previous/next, arrow keys and swipe, and wra
 for (const [id,url] of [['picnic-2026-10','https://libertyplacenewalbany.com/'],['bnb-2026-10','https://harleydavidsonlouisville.com/'],['mtg-2026-10','https://bluegrassharleydavidson.com/'],['mtg-2026-11','https://bluegrassharleydavidson.com/']]){run(`location.hash='#calendar/${id}';render()`);const h=node('#main').innerHTML;assert.ok(h.includes(`href="${url}" target="_blank" rel="noopener"`),id+' venue link');assert.match(h,/Visit .* (website|on Facebook) ↗/)}
 run("location.hash='#calendar/mtg-2026-12';render()");{const h=node('#main').innerHTML;assert.doesNotMatch(h,/facebook\.com|amvets\.org|Visit AMVETS/);assert.match(h,/google\.com\/maps\/search/);}
 console.log('PASS: venue websites linked; AMVETS Post 61 shows address and map link only.');
+run("location.hash='#officers';render()");{const h=node('#main').innerHTML;
+ for (const s of ['Chapter Commander','Donald “Joker” Lamon','mailto:commandercvma.ky1.4@gmail.com','David “Recon” Baird','mailto:Recon.xo.cvma.ky.1.4@gmail.com','Kyle “Dragonsclaw” Ohlmann','mailto:kyle.a.ohlmann@gmail.com','Stuart “Diesel” Rowe','mailto:seccvmaky1.4@gmail.com','Anthony “Ant” Williams','mailto:csaa.cvma.ky1.4@gmail.com','“Speedy”','mailto:PROCVMA1.4@gmail.com','James “Shepherd” Shelby Pruitt','Peter “Gascap” Weintraub','Shepherd · Ski · Caveman','Chapter Webmaster','To be determined'])assert.ok(h.includes(s),'Officers page missing: '+s);
+ assert.equal((h.match(/class="card officer"/g)||[]).length,10);assert.doesNotMatch(h,/placeholders/);}
+assert.doesNotMatch(fs.readFileSync('site/app.js','utf8'),/[A-Za-z0-9.]+@gmail\.com/,'emails must not appear whole in the source');
+console.log('PASS: Officers page shows 10 positions with names and correct email links.');
+run("location.hash='#officers';render()");{const h=node('#main').innerHTML;assert.equal((h.match(/class="officer-photo"/g)||[]).length,9,'9 officer photos (all but Road Captains)');assert.ok(fs.existsSync('site/assets/officers/placeholder.svg'));
+ const rc=h.split('<article').find(c=>c.includes('Road Captains'));assert.doesNotMatch(rc,/officer-photo/);}
+console.log('PASS: placeholder photos on 9 officer cards, none on Road Captains.');
