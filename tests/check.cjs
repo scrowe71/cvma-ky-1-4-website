@@ -35,3 +35,8 @@ run("location.hash='#calendar/bnb-2026-10';render()");assert.match(node('#main')
  vm.runInContext(fs.readFileSync('site/calendar.js','utf8'),c2);vm.runInContext(fs.readFileSync('site/app.js','utf8'),c2);
  assert.equal(vm.runInContext('state.events.map(e=>e.id).join()',c2),'bnb-2026-10,mtg-2026-11,mtg-2026-12','Returning visitor: samples removed, chapter events added');}
 console.log('PASS: chapter meetings Nov 21 and Dec 12 shown with times, addresses and map links; returning visitors receive them.');
+run("location.hash='#gallery';render()");assert.match(node('#main').innerHTML,/href="#gallery\/bikes-and-boneheads-2026"/);assert.match(node('#main').innerHTML,/Bikes &amp; Boneheads/);assert.match(node('#main').innerHTML,/4 photos/);
+run("location.hash='#gallery/bikes-and-boneheads-2026';render()");{const h=node('#main').innerHTML;for(let n=1;n<=4;n++){assert.ok(fs.existsSync(`site/assets/albums/bikes-and-boneheads-2026/photo-${n}.jpg`)&&fs.existsSync(`site/assets/albums/bikes-and-boneheads-2026/photo-${n}-thumb.jpg`),'photo file '+n);assert.match(h,new RegExp(`photo-${n}-thumb\\.jpg`))}assert.match(h,/October 24, 2026/);}
+run("location.hash='#gallery/nope';render()");assert.match(node('#main').innerHTML,/Album unavailable/);
+run("location.hash='#calendar/bnb-2026-10';render()");assert.match(node('#main').innerHTML,/View photos/);
+console.log('PASS: Bikes & Boneheads album listed, 4 photos present, album page and event link work.');

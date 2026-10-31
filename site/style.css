@@ -11,3 +11,11 @@ header .brand{white-space:nowrap;font-size:24px;line-height:1.2;letter-spacing:.
 .version{display:inline-block;margin-top:8px;color:#777;font-size:11px;letter-spacing:.04em}.version .env{color:#e8b84a;font-weight:700}
 .tag.confirmed{color:#7fd18b;border-color:#7fd18b}
 .tag.past{color:#999;border-color:#666;margin-left:6px}
+.albums{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.album-card{display:block;border:1px solid var(--line);background:var(--panel);text-decoration:none;color:inherit}
+.album-card img{width:100%;height:260px;object-fit:cover;display:block}
+.album-meta{display:flex;flex-direction:column;gap:4px;padding:14px;font-size:13px;color:#aaa}
+.album-meta strong{color:#eee;font-size:16px}
+.album-card:hover{border-color:#e8b84a}
+.gallery img{object-position:center 40%}
+dialog.lightbox img{max-width:min(90vw,900px);max-height:80vh;display:block}
