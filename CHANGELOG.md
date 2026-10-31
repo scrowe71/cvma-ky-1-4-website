@@ -12,3 +12,4 @@ Baseline production release, identical to the site previously hand-uploaded to c
 - Pages: Home, About, Officers, Calendar, Gallery, Contact, plus officer demo and integration plan
 - Calendar opens to current month with month navigation and clickable event details
 - Google Calendar, officer login, photo storage and email are simulated
+- 
