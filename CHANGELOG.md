@@ -8,6 +8,7 @@
   - Monthly Chapter Meeting & Christmas Party – Sat Dec 12 2026, 17:00–21:00, AMVETS Post 61, 9405 Smyrna Pkwy, Louisville, KY 40229
 - Events can carry an end time, street address with map link, and a green "Chapter event" label; past events show a "Past event" label
 - Home page "Coming together" lists upcoming events only
+- Photo gallery: new "Bikes & Boneheads" album (Oct 24, 2026, 4 photos) with full-size viewer; linked from the event page. License plate blurred; photo location data removed
 
 ## v1.1.0 – 2026-10-31
 - Footer shows the site version
