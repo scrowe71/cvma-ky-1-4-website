@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0 – 2026-10-31
+- Footer shows the site version
+- Development site labels itself DEVELOPMENT next to the version
+- Automatic check: footer version must match the newest CHANGELOG entry
+
 ## v1.0.1 – 2026-10-31
 Documentation only; website unchanged.
 - Corrected production and development addresses to cvma-ky-1-4-website.pages.dev
