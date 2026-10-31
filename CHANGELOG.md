@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.1 – 2026-10-31
+Documentation only; website unchanged.
+- Corrected production and development addresses to cvma-ky-1-4-website.pages.dev
+- Documented the old cvma-ky-1-4-preview address forwarding to production
+
 ## v1.0.0 – 2026-10-31
 Baseline production release, identical to the site previously hand-uploaded to cvma-ky-1-4-preview.pages.dev.
 - Motorcycle background homepage; approved ODL with red ®; layout switch removed
