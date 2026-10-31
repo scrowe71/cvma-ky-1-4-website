@@ -5,7 +5,7 @@ const ALBUMS=[{id:'bikes-and-boneheads-2026',title:'Bikes & Boneheads',date:'202
 {n:2,alt:'Chapter canopies and merchandise tables set up beside the dealership'},
 {n:3,alt:'Members talking at a picnic table outside the dealership'},
 {n:4,alt:'Chapter information table and members seated under a canopy'}]},
-{id:'chapter-picnic',title:'Chapter Picnic 2027',date:'2026-10-17',event:'picnic-2026-10',place:'Liberty Place, New Albany, Indiana',cover:16,photos:[
+{id:'chapter-picnic',title:'Chapter Picnic 2026',date:'2026-10-17',event:'picnic-2026-10',place:'Liberty Place, New Albany, Indiana',cover:16,photos:[
 {n:1,alt:'Brisket on the smoker ahead of the picnic'},
 {n:2,alt:'Two smokers loaded with seasoned pork shoulders'},
 {n:3,alt:'Members gathered near the food tables'},

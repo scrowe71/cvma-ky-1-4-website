@@ -11,7 +11,7 @@
 - Events can carry an end time, street address with map link, and a green "Chapter event" label; past events show a "Past event" label
 - Home page "Coming together" lists upcoming events only
 - Photo gallery: new "Bikes & Boneheads" album (Oct 24, 2026, 4 photos) with full-size viewer; linked from the event page. License plate blurred; photo location data removed
-- Photo gallery: new "Chapter Picnic 2027" album (17 photos, Liberty Place), linked from the Annual Chapter Picnic event; albums list newest first
+- Photo gallery: new "Chapter Picnic 2026" album (17 photos, Liberty Place), linked from the Annual Chapter Picnic event; albums list newest first
 - Photo viewer: previous/next buttons, left/right arrow keys and swipe on phones; wraps from last photo to first
 
 ## v1.1.0 – 2026-10-31

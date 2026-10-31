@@ -43,7 +43,7 @@ console.log('PASS: Bikes & Boneheads album listed, 4 photos present, album page 
 run("location.hash='#calendar/mtg-2026-10';render()");{const h=node('#main').innerHTML;assert.match(h,/Saturday, October 17, 2026/);assert.match(h,/10:30 ·/);assert.match(h,/PAST EVENT/);}
 run("location.hash='#calendar/picnic-2026-10';render()");{const h=node('#main').innerHTML;assert.match(h,/Annual Chapter Picnic/);assert.match(h,/Saturday, October 17, 2026/);assert.match(h,/PAST EVENT/);assert.match(h,/13:00 ·/);assert.match(h,/Liberty Place, New Albany, Indiana/);}
 console.log('PASS: Oct 17 meeting and Oct 17 picnic shown as past events.');
-run("location.hash='#gallery';render()");assert.match(node('#main').innerHTML,/Chapter Picnic 2027/);assert.match(node('#main').innerHTML,/17 photos/);assert.match(node('#main').innerHTML,/chapter-picnic\/photo-16-thumb\.jpg/);
+run("location.hash='#gallery';render()");assert.match(node('#main').innerHTML,/Chapter Picnic 2026/);assert.match(node('#main').innerHTML,/17 photos/);assert.match(node('#main').innerHTML,/chapter-picnic\/photo-16-thumb\.jpg/);
 run("location.hash='#gallery/chapter-picnic';render()");{const h=node('#main').innerHTML;for(let n=1;n<=17;n++){assert.ok(fs.existsSync(`site/assets/albums/chapter-picnic/photo-${n}.jpg`)&&fs.existsSync(`site/assets/albums/chapter-picnic/photo-${n}-thumb.jpg`),'picnic photo '+n);assert.match(h,new RegExp(`chapter-picnic/photo-${n}-thumb\\.jpg`))}}
 run("location.hash='#calendar/picnic-2026-10';render()");assert.match(node('#main').innerHTML,/#gallery\/chapter-picnic/);
 console.log('PASS: Chapter Picnic album listed with 17 photos and linked from the picnic event.');
