@@ -33,10 +33,13 @@ run("location.hash='#calendar/bnb-2026-10';render()");assert.match(node('#main')
 {const old={events:[{id:'a',title:'Veterans community ride',date:'2026-11-14',time:'09:00',place:'x'}],permissions:{Webmaster:[true,true,true],Commander:[false,false,false],Officer:[false,false,false]},photos:[],log:[]};
  const st=new Map([['cvma-demo-v1',JSON.stringify(old)]]);const c2=vm.createContext({console,structuredClone,crypto,Date,setTimeout(){},location:{hash:''},localStorage:{getItem:k=>st.get(k),setItem:(k,v)=>st.set(k,v)},document:{querySelector:node,querySelectorAll:()=>[]},window:{addEventListener(){},scrollTo(){}},confirm:()=>true});
  vm.runInContext(fs.readFileSync('site/calendar.js','utf8'),c2);vm.runInContext(fs.readFileSync('site/app.js','utf8'),c2);
- assert.equal(vm.runInContext('state.events.map(e=>e.id).join()',c2),'bnb-2026-10,mtg-2026-11,mtg-2026-12','Returning visitor: samples removed, chapter events added');}
+ assert.equal(vm.runInContext('state.events.map(e=>e.id).join()',c2),'mtg-2026-10,picnic-2026-11,bnb-2026-10,mtg-2026-11,mtg-2026-12','Returning visitor: samples removed, chapter events added');}
 console.log('PASS: chapter meetings Nov 21 and Dec 12 shown with times, addresses and map links; returning visitors receive them.');
 run("location.hash='#gallery';render()");assert.match(node('#main').innerHTML,/href="#gallery\/bikes-and-boneheads-2026"/);assert.match(node('#main').innerHTML,/Bikes &amp; Boneheads/);assert.match(node('#main').innerHTML,/4 photos/);
 run("location.hash='#gallery/bikes-and-boneheads-2026';render()");{const h=node('#main').innerHTML;for(let n=1;n<=4;n++){assert.ok(fs.existsSync(`site/assets/albums/bikes-and-boneheads-2026/photo-${n}.jpg`)&&fs.existsSync(`site/assets/albums/bikes-and-boneheads-2026/photo-${n}-thumb.jpg`),'photo file '+n);assert.match(h,new RegExp(`photo-${n}-thumb\\.jpg`))}assert.match(h,/October 24, 2026/);}
 run("location.hash='#gallery/nope';render()");assert.match(node('#main').innerHTML,/Album unavailable/);
 run("location.hash='#calendar/bnb-2026-10';render()");assert.match(node('#main').innerHTML,/View photos/);
 console.log('PASS: Bikes & Boneheads album listed, 4 photos present, album page and event link work.');
+run("location.hash='#calendar/mtg-2026-10';render()");{const h=node('#main').innerHTML;assert.match(h,/Saturday, October 17, 2026/);assert.match(h,/10:30 ·/);assert.match(h,/PAST EVENT/);}
+run("location.hash='#calendar/picnic-2026-11';render()");{const h=node('#main').innerHTML;assert.match(h,/Annual Chapter Picnic/);assert.match(h,/Tuesday, November 17, 2026/);assert.match(h,/13:00 ·/);assert.match(h,/Liberty Place, New Albany, Indiana/);}
+console.log('PASS: Oct 17 meeting (past) and Nov 17 picnic shown.');

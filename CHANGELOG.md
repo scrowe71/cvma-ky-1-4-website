@@ -3,6 +3,8 @@
 ## v1.2.0 – 2026-10-31
 - Removed the made-up sample events (Veterans community ride, Chapter fellowship, Winter service day), including from returning visitors' saved copies
 - Added chapter events:
+  - Monthly Chapter Meeting – Sat Oct 17 2026, 10:30, Bluegrass Harley-Davidson (past event)
+  - Annual Chapter Picnic – Tue Nov 17 2026, 13:00, Liberty Place, New Albany, Indiana
   - Bikes & Boneheads – Sat Oct 24 2026, registration 9:00 AM, Louisville Harley-Davidson (past event)
   - Monthly Chapter Meeting – Sat Nov 21 2026, 10:30–12:30, Bluegrass Harley-Davidson, 2755 Terra Crossing Blvd, Louisville, KY 40245
   - Monthly Chapter Meeting & Christmas Party – Sat Dec 12 2026, 17:00–21:00, AMVETS Post 61, 9405 Smyrna Pkwy, Louisville, KY 40229
