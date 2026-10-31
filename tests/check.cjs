@@ -18,3 +18,8 @@ console.log('PASS: calendar month navigation, current-month reset, event detail 
 assert.equal(crypto.createHash('sha256').update(fs.readFileSync('site/assets/odl-approved.png')).digest('hex'),'345c074790e128519d96f75057d9334067a00c3718e53f3eec3304b68a202afe','Approved ODL artwork changed');
 run("location.hash='#home';render()");assert.doesNotMatch(node('#main').innerHTML,/data-variant/,'Homepage layout switch must stay removed');assert.match(node('#main').innerHTML,/hero photo/);
 console.log('PASS: approved ODL unchanged, motorcycle layout only.');
+const footerVersion=(fs.readFileSync('site/index.html','utf8').match(/data-version="(v\d+\.\d+\.\d+)"/)||[])[1];
+const changelogVersion=(fs.readFileSync('CHANGELOG.md','utf8').match(/^## (v\d+\.\d+\.\d+)/m)||[])[1];
+assert.ok(footerVersion,'Footer version missing');assert.equal(footerVersion,changelogVersion,'Footer version must match newest CHANGELOG entry');
+assert.match(fs.readFileSync('site/index.html','utf8'),new RegExp('>Version '+footerVersion.replace(/\./g,'\\.')+'<'),'Footer text must show the same version');
+console.log('PASS: footer shows '+footerVersion+', matching CHANGELOG.');
