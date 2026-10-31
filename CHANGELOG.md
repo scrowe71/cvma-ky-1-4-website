@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.0 – 2026-10-31
+- Removed the made-up sample events (Veterans community ride, Chapter fellowship, Winter service day), including from returning visitors' saved copies
+- Added chapter events:
+  - Bikes & Boneheads – Sat Oct 24 2026, registration 9:00 AM, Louisville Harley-Davidson (past event)
+  - Monthly Chapter Meeting – Sat Nov 21 2026, 10:30–12:30, Bluegrass Harley-Davidson, 2755 Terra Crossing Blvd, Louisville, KY 40245
+  - Monthly Chapter Meeting & Christmas Party – Sat Dec 12 2026, 17:00–21:00, AMVETS Post 61, 9405 Smyrna Pkwy, Louisville, KY 40229
+- Events can carry an end time, street address with map link, and a green "Chapter event" label; past events show a "Past event" label
+- Home page "Coming together" lists upcoming events only
+
 ## v1.1.0 – 2026-10-31
 - Footer shows the site version
 - Development site labels itself DEVELOPMENT next to the version
