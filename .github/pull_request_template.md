@@ -2,7 +2,7 @@
 
 **What changed:**
 
-**Tested on https://dev.cvma-ky-1-4.pages.dev**
+**Tested on https://dev.cvma-ky-1-4-website.pages.dev**
 - [ ] Phone
 - [ ] Computer
 - [ ] Home, About, Officers, Calendar, Gallery, Contact all open
