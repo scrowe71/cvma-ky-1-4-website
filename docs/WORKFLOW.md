@@ -6,7 +6,7 @@
 
 All edits are committed to the `dev` branch (never to `main`). Cloudflare automatically publishes every push to `dev` at:
 
-`https://dev.cvma-ky-1-4.pages.dev`
+`https://dev.cvma-ky-1-4-website.pages.dev`
 
 ## 2. Test on the development site
 
@@ -32,7 +32,7 @@ By hand, on the dev address, on both a phone and a computer:
 
 ## 4. If production breaks
 
-In Cloudflare: **Workers & Pages → cvma-ky-1-4 → Deployments**, find the last good production deployment, and choose **Rollback to this deployment**. Then fix the problem on `dev` and promote it normally.
+In Cloudflare: **Workers & Pages → cvma-ky-1-4-website → Deployments**, find the last good production deployment, and choose **Rollback to this deployment**. Then fix the problem on `dev` and promote it normally.
 
 ## Version numbers
 

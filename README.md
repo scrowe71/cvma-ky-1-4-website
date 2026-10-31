@@ -4,8 +4,10 @@ Concept website for Combat Veterans Motorcycle Association® Kentucky Chapter 1-
 
 | Environment | Git branch | Cloudflare address | Who changes it |
 |---|---|---|---|
-| **Production** | `main` | `https://cvma-ky-1-4.pages.dev` | Nobody directly. Changes arrive only by an approved pull request from `dev`. |
-| **Development** | `dev` | `https://dev.cvma-ky-1-4.pages.dev` | Every change goes here first. |
+| **Production** | `main` | `https://cvma-ky-1-4-website.pages.dev` | Nobody directly. Changes arrive only by an approved pull request from `dev`. |
+| **Development** | `dev` | `https://dev.cvma-ky-1-4-website.pages.dev` | Every change goes here first. |
+
+The old shared link `https://cvma-ky-1-4-preview.pages.dev` forwards to production.
 
 First-time setup: [docs/SETUP.md](docs/SETUP.md). Before making any change, read [docs/WORKFLOW.md](docs/WORKFLOW.md).
 

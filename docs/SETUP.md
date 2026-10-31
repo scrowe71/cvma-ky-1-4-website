@@ -29,14 +29,14 @@ From then on, nothing (including you) can change `main` except by merging an app
 1. https://dash.cloudflare.com → **Workers & Pages → Create → Pages → Connect to Git**.
 2. Authorize GitHub and select `cvma-ky-1-4-website`.
 3. Settings:
-   - Project name: `cvma-ky-1-4`
+   - Project name: `cvma-ky-1-4-website`
    - Production branch: `main`
    - Framework preset: **None**
    - Build command: *(leave empty)*
    - Build output directory: `site`
-4. **Save and Deploy.** Production goes live at `https://cvma-ky-1-4.pages.dev`.
-5. **Settings → Builds → Branch control**: Preview branches → **Custom branches**, include `dev`. Then push any change to `dev` (or click **Retry deployment**) and the development site appears at `https://dev.cvma-ky-1-4.pages.dev`.
+4. **Save and Deploy.** Production goes live at `https://cvma-ky-1-4-website.pages.dev`.
+5. **Settings → Builds → Branch control**: Preview branches → **Custom branches**, include `dev`. Then push any change to `dev` (or click **Retry deployment**) and the development site appears at `https://dev.cvma-ky-1-4-website.pages.dev`.
 
-## D. Retire the old hand-uploaded site
+## D. Old address forwards to production
 
-Once both new addresses work, update the link in the board email and the presentation to `https://cvma-ky-1-4.pages.dev`. Then delete the old `cvma-ky-1-4-preview` project (**Settings → Delete project**) so there is only one production site and it can't be hand-uploaded to.
+The original hand-uploaded project `cvma-ky-1-4-preview` was replaced (once, by hand) with a redirect, because its link had already been shared. `https://cvma-ky-1-4-preview.pages.dev` and any page link on it (e.g. `/#calendar`) forward to `https://cvma-ky-1-4-website.pages.dev`. Do not upload anything else to that project. Use the production address in anything new.
