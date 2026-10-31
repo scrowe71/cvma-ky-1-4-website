@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.2.1 – 2026-10-31
+- Added ZIP code 47150 to the Liberty Place address (Annual Chapter Picnic)
+
 ## v1.2.0 – 2026-10-31
 - Removed the made-up sample events (Veterans community ride, Chapter fellowship, Winter service day), including from returning visitors' saved copies
 - Added chapter events:
