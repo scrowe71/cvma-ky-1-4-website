@@ -24,3 +24,4 @@ dialog.lightbox{padding:12px;max-width:96vw}
 .lb-stage img{max-width:min(80vw,900px);max-height:78vh;display:block;margin:auto}
 .lb-nav{font-size:34px;line-height:1;padding:10px 16px;min-width:48px;min-height:48px;cursor:pointer}
 @media(max-width:700px){.lb-stage{position:relative}.lb-stage img{max-width:92vw}.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);color:#fff;border:0}#lb-prev{left:0}#lb-next{right:0}}
+.venue-link{display:inline-block;margin-top:6px;color:#e8b84a}
