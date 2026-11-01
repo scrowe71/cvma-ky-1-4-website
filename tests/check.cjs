@@ -65,3 +65,5 @@ console.log('PASS: Officers page shows 10 positions with names and correct email
 run("location.hash='#officers';render()");{const h=node('#main').innerHTML;assert.equal((h.match(/class="officer-photo"/g)||[]).length,9,'9 officer photos (all but Road Captains)');assert.ok(fs.existsSync('site/assets/officers/placeholder.svg'));
  const rc=h.split('<article').find(c=>c.includes('Road Captains'));assert.doesNotMatch(rc,/officer-photo/);}
 console.log('PASS: placeholder photos on 9 officer cards, none on Road Captains.');
+{const h=fs.readFileSync('site/index.html','utf8');for(const f of ['favicon.ico','assets/icons/favicon-32.png','assets/icons/apple-touch-icon.png']){assert.ok(h.includes(`href="${f}"`),'icon link '+f);assert.ok(fs.existsSync('site/'+f),'icon file '+f)}}
+console.log('PASS: site icon linked for browser tabs and phone home screens.');
