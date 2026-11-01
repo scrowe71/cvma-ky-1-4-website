@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.3.2 – 2026-11-01
+- Version number change only (no site changes), to tell the development build apart from production
+
 ## v1.3.1 – 2026-10-31
 - Site icon (browser tab, bookmarks, phone home screen) from the approved Chapter 1-4 ODL, scaled down without changes
 
