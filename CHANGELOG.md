@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.3.1 – 2026-10-31
+- Site icon (browser tab, bookmarks, phone home screen) from the approved Chapter 1-4 ODL, scaled down without changes
+
 ## v1.3.0 – 2026-10-31
 - Officers page lists the chapter officers with names and email links: Commander, Executive Officer, Treasurer, Secretary, Sergeant at Arms, Public Relations Officer, Chaplain, Quartermaster, Road Captains, Webmaster (TBD)
 - Removed the "placeholder roles" notice
