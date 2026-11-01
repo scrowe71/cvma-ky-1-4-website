@@ -9,12 +9,16 @@ Concept website for Combat Veterans Motorcycle Association® Kentucky Chapter 1-
 
 The old shared link `https://cvma-ky-1-4-preview.pages.dev` forwards to production.
 
+Editing content (officers, About, events, albums): see [docs/EDITING.md](docs/EDITING.md).
+
 First-time setup: [docs/SETUP.md](docs/SETUP.md). Before making any change, read [docs/WORKFLOW.md](docs/WORKFLOW.md).
 
 ## Layout
 
 ```
 site/        The website itself (what Cloudflare publishes). No build step.
+site/content/ Editable content (JSON), edited through Pages CMS
+.pages.yml   Pages CMS editing forms
 tests/       Automated checks; run with: node tests/check.cjs
 docs/        Workflow, setup and architecture notes
 CHANGELOG.md Every production release, newest first

@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.4.0 – 2026-11-01
+- Site content moved out of the code into editable files in site/content/: Home, About, Officers, Calendar events, Photo albums, Contact
+- Pages CMS set up (.pages.yml) so officers can edit those sections in a browser at app.pagescms.org, on the dev branch
+- Event and album web addresses now come from their titles (e.g. #calendar/2026-11-21-monthly-chapter-meeting)
+- Browsers that saved an older copy of the demo calendar always show the current chapter events
+- Officer demo page points to Pages CMS for real changes; its own tools remain a browser-only demonstration
+- Calendar events are editable in Pages CMS until Google Calendar is connected
+- Public pages look exactly the same as v1.3.2
+
 ## v1.3.2 – 2026-11-01
 - Version number change only (no site changes), to tell the development build apart from production
 

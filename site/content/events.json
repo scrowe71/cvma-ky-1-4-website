@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Monthly Chapter Meeting",
+    "date": "2026-10-17",
+    "time": "10:30",
+    "end": "",
+    "place": "Bluegrass Harley-Davidson",
+    "address": "2755 Terra Crossing Blvd, Louisville, KY 40245",
+    "website": "https://bluegrassharleydavidson.com/",
+    "details": "",
+    "album": ""
+  },
+  {
+    "title": "Annual Chapter Picnic",
+    "date": "2026-10-17",
+    "time": "13:00",
+    "end": "",
+    "place": "Liberty Place",
+    "address": "2633 Grant Line Road, New Albany, IN 47150",
+    "website": "https://libertyplacenewalbany.com/",
+    "details": "",
+    "album": "Chapter Picnic 2026"
+  },
+  {
+    "title": "Bikes & Boneheads",
+    "date": "2026-10-24",
+    "time": "09:00",
+    "end": "",
+    "place": "Harley-Davidson of Louisville",
+    "address": "1700 Arthur St, Louisville, KY 40208",
+    "website": "https://harleydavidsonlouisville.com/",
+    "details": "Registration at 9:00 AM.",
+    "album": "Bikes & Boneheads"
+  },
+  {
+    "title": "Monthly Chapter Meeting",
+    "date": "2026-11-21",
+    "time": "10:30",
+    "end": "12:30",
+    "place": "Bluegrass Harley-Davidson",
+    "address": "2755 Terra Crossing Blvd, Louisville, KY 40245",
+    "website": "https://bluegrassharleydavidson.com/",
+    "details": "",
+    "album": ""
+  },
+  {
+    "title": "Monthly Chapter Meeting & Christmas Party",
+    "date": "2026-12-12",
+    "time": "17:00",
+    "end": "21:00",
+    "place": "AMVETS Post 61",
+    "address": "9405 Smyrna Pkwy, Louisville, KY 40229",
+    "website": "",
+    "details": "December chapter meeting and Christmas party. Date verified with the AMVETS Post 61 calendar.",
+    "album": ""
+  }
+]

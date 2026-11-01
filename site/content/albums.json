@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Bikes & Boneheads",
+    "date": "2026-10-24",
+    "place": "Harley-Davidson of Louisville",
+    "cover": 1,
+    "photos": [
+      {
+        "image": "assets/albums/bikes-and-boneheads-2026/photo-1.jpg",
+        "thumbnail": "assets/albums/bikes-and-boneheads-2026/photo-1-thumb.jpg",
+        "alt": "Touring motorcycle with its trunk full of Halloween candy and a costume mask, parked outside the dealership"
+      },
+      {
+        "image": "assets/albums/bikes-and-boneheads-2026/photo-2.jpg",
+        "thumbnail": "assets/albums/bikes-and-boneheads-2026/photo-2-thumb.jpg",
+        "alt": "Chapter canopies and merchandise tables set up beside the dealership"
+      },
+      {
+        "image": "assets/albums/bikes-and-boneheads-2026/photo-3.jpg",
+        "thumbnail": "assets/albums/bikes-and-boneheads-2026/photo-3-thumb.jpg",
+        "alt": "Members talking at a picnic table outside the dealership"
+      },
+      {
+        "image": "assets/albums/bikes-and-boneheads-2026/photo-4.jpg",
+        "thumbnail": "assets/albums/bikes-and-boneheads-2026/photo-4-thumb.jpg",
+        "alt": "Chapter information table and members seated under a canopy"
+      }
+    ]
+  },
+  {
+    "title": "Chapter Picnic 2026",
+    "date": "2026-10-17",
+    "place": "Liberty Place, New Albany, IN",
+    "cover": 16,
+    "photos": [
+      {
+        "image": "assets/albums/chapter-picnic/photo-1.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-1-thumb.jpg",
+        "alt": "Brisket on the smoker ahead of the picnic"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-2.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-2-thumb.jpg",
+        "alt": "Two smokers loaded with seasoned pork shoulders"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-3.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-3-thumb.jpg",
+        "alt": "Members gathered near the food tables"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-4.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-4-thumb.jpg",
+        "alt": "Members standing by the food table"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-5.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-5-thumb.jpg",
+        "alt": "Members by the food tables, one pointing toward the ceiling"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-6.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-6-thumb.jpg",
+        "alt": "Members seated at a yellow table beneath a hand-made thank-you sign"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-7.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-7-thumb.jpg",
+        "alt": "Members and guests seated at tables by the windows"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-8.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-8-thumb.jpg",
+        "alt": "Auxiliary member taking the oath on stage"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-9.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-9-thumb.jpg",
+        "alt": "Auxiliary member holding her patch during the ceremony"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-10.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-10-thumb.jpg",
+        "alt": "Two new members and supporters receiving their patches"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-11.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-11-thumb.jpg",
+        "alt": "New member and supporter taking the oath on stage"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-12.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-12-thumb.jpg",
+        "alt": "Oath ceremony on stage, second view"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-13.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-13-thumb.jpg",
+        "alt": "Members in matching plaid shirts with a white dog on stage"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-14.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-14-thumb.jpg",
+        "alt": "Members in matching plaid shirts, second shot"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-15.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-15-thumb.jpg",
+        "alt": "Members in matching plaid shirts, third shot"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-16.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-16-thumb.jpg",
+        "alt": "Chapter group photo at the picnic"
+      },
+      {
+        "image": "assets/albums/chapter-picnic/photo-17.jpg",
+        "thumbnail": "assets/albums/chapter-picnic/photo-17-thumb.jpg",
+        "alt": "Chapter group photo at the picnic, second shot"
+      }
+    ]
+  }
+]
