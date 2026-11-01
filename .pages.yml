@@ -1,0 +1,112 @@
+# Pages CMS settings for the CVMA® KY Chapter 1-4 website.
+# Editors use https://app.pagescms.org — always on the "dev" branch.
+# Changes appear on https://dev.cvma-ky-1-4-website.pages.dev about a minute after saving,
+# and reach the public site only when the Webmaster merges dev into main.
+
+media:
+  input: site/assets
+  output: assets
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: site/content/home.json
+    format: json
+    fields:
+      - { name: hero_eyebrow, label: Small heading above the headline, type: string }
+      - { name: headline_1, label: Headline – line 1, type: string, required: true }
+      - { name: headline_2, label: Headline – line 2 (shown in gold), type: string }
+      - { name: headline_3, label: Headline – line 3, type: string }
+      - { name: intro, label: Introduction, type: text, description: "The ® symbol is shown small and raised automatically." }
+      - { name: strip, label: Banner words (01 / 02 / 03), type: string, list: { min: 1, max: 4 } }
+      - { name: events_eyebrow, label: Events section – small heading, type: string }
+      - { name: events_heading, label: Events section – heading, type: string }
+      - { name: events_note, label: Events section – note under the events, type: text }
+      - { name: closing_eyebrow, label: Bottom section – small heading, type: string }
+      - { name: closing_heading, label: Bottom section – heading, type: text, description: "Press Enter to start a new line." }
+      - { name: closing_text, label: Bottom section – text, type: text }
+
+  - name: about
+    label: About page
+    type: file
+    path: site/content/about.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Page heading, type: string, required: true }
+      - { name: subheading, label: Line under the heading, type: string }
+      - { name: banner, label: Banner picture, type: image, options: { path: site/assets } }
+      - { name: banner_alt, label: Banner picture description (for screen readers), type: string }
+      - { name: main_heading, label: Main section heading, type: string }
+      - { name: body, label: Main section text, type: rich-text, options: { format: markdown } }
+      - { name: button_text, label: Contact button wording, type: string }
+      - { name: card_eyebrow, label: Side box – small heading, type: string }
+      - { name: card_heading, label: Side box – heading, type: string }
+      - { name: card_body, label: Side box – text, type: rich-text, options: { format: markdown } }
+      - { name: card_note, label: Side box – small grey note, type: text }
+
+  - name: officers
+    label: Officers
+    type: file
+    path: site/content/officers.json
+    format: json
+    list: true
+    fields:
+      - { name: role, label: Position, type: string, required: true }
+      - { name: name, label: Name (with road name), type: string, required: true, description: "Example: Stuart “Diesel” Rowe. Use “To be determined” for an open position." }
+      - { name: email, label: Email address, type: string, description: "Leave blank to show “Contact through the chapter”. Prefer position addresses that pass to the next officer." }
+      - { name: photo, label: Photo, type: image, options: { path: site/assets/officers }, description: "Square photo works best. Leave blank for the “photo coming soon” picture." }
+      - { name: show_photo, label: Show a photo for this position, type: boolean, default: true }
+
+  # TEMPORARY: remove this section once the site reads events from Google Calendar.
+  - name: events
+    label: Calendar events (until Google Calendar is connected)
+    type: file
+    path: site/content/events.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Event name, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true, options: { format: yyyy-MM-dd } }
+      - { name: time, label: Start time, type: string, required: true, description: "24-hour clock, e.g. 09:00, 13:00, 17:30" }
+      - { name: end, label: End time (optional), type: string, description: "24-hour clock, e.g. 21:00" }
+      - { name: place, label: Venue name, type: string }
+      - { name: address, label: Street address, type: string, description: "Adds a Google Maps link. Example: 2755 Terra Crossing Blvd, Louisville, KY 40245" }
+      - { name: website, label: Venue website (optional), type: string, description: "Full address starting with https://" }
+      - { name: details, label: Details (optional), type: text }
+      - { name: album, label: Photo album (optional), type: string, description: "Type the photo album's title exactly to add a “View photos” button." }
+
+  - name: albums
+    label: Photo albums
+    type: file
+    path: site/content/albums.json
+    format: json
+    list: true
+    fields:
+      - { name: title, label: Album title, type: string, required: true }
+      - { name: date, label: Date, type: date, required: true, options: { format: yyyy-MM-dd } }
+      - { name: place, label: Place, type: string }
+      - { name: cover, label: Cover photo number, type: number, default: 1, description: "Which photo (1, 2, 3…) shows on the album card." }
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, required: true, options: { path: site/assets/albums } }
+          - { name: alt, label: Description (for screen readers), type: string, description: "Briefly describe what is in the photo." }
+          - { name: thumbnail, label: Small preview (optional), type: image, hidden: true }
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: site/content/contact.json
+    format: json
+    fields:
+      - { name: eyebrow, label: Small heading, type: string }
+      - { name: heading, label: Page heading, type: string }
+      - { name: subheading, label: Line under the heading, type: string }
+      - { name: section_heading, label: Section heading, type: text, description: "Press Enter to start a new line." }
+      - { name: body, label: Text, type: rich-text, options: { format: markdown } }
+      - { name: notice, label: Notice box, type: text }

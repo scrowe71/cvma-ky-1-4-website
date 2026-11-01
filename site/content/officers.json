@@ -1,0 +1,72 @@
+[
+  {
+    "role": "Chapter Commander",
+    "name": "Donald “Joker” Lamon",
+    "email": "commandercvma.ky1.4@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Executive Officer",
+    "name": "David “Recon” Baird",
+    "email": "Recon.xo.cvma.ky.1.4@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Treasurer",
+    "name": "Kyle “Dragonsclaw” Ohlmann",
+    "email": "kyle.a.ohlmann@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Secretary",
+    "name": "Stuart “Diesel” Rowe",
+    "email": "seccvmaky1.4@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Sergeant at Arms",
+    "name": "Anthony “Ant” Williams",
+    "email": "csaa.cvma.ky1.4@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Public Relations Officer",
+    "name": "“Speedy”",
+    "email": "PROCVMA1.4@gmail.com",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Chaplain",
+    "name": "James “Shepherd” Shelby Pruitt",
+    "email": "",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Quartermaster",
+    "name": "Peter “Gascap” Weintraub",
+    "email": "",
+    "photo": "",
+    "show_photo": true
+  },
+  {
+    "role": "Chapter Road Captains",
+    "name": "Shepherd · Ski · Caveman",
+    "email": "",
+    "photo": "",
+    "show_photo": false
+  },
+  {
+    "role": "Chapter Webmaster",
+    "name": "To be determined",
+    "email": "",
+    "photo": "",
+    "show_photo": true
+  }
+]
